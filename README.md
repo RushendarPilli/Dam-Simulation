@@ -155,23 +155,6 @@ The project is implemented entirely in **MATLAB**, chosen for its strong built-i
 
 **User Interface.** The GUI is built using MATLAB's native `uicontrol` and `uipanel` components — sliders for every input parameter, a dropdown for dam type, and a results panel that lists all computed values. Six live plots surround a central schematic of the dam itself, and everything recalculates and redraws automatically the moment any slider moves.
 
-## Results
-
-Results below are shown for a representative operating point: H = 60 m, W = 100 m, Q = 600 m³/s, η = 0.85, Gravity Dam. The simulation supports any combination of inputs — these numbers illustrate one example scenario.
-
-**Force vs. Height.** Force grows nonlinearly with height, consistent with the H² relationship in the governing equation. At H = 60 m, computed force is approximately **1.77 GN**. This nonlinearity means increases in water level cause rapidly increasing structural load on the dam.
-
-**Power vs. Flow Rate.** As expected from the linear relationship in the power equation, this plot is a straight line. At Q = 600 m³/s, generated power is approximately **300.2 MW**.
-
-**Sensitivity Analysis.** At H = 60 m, the rate of change of force with respect to height is moderate — the system is less sensitive to height changes at lower water levels and becomes progressively more sensitive as height increases, meaning risk accelerates rather than growing at a constant rate.
-
-**Monte Carlo Simulation.** Across thousands of randomized trials, power output stayed tightly clustered around 300 MW with a relatively narrow spread, and unsafe risk came out negligible — confirming the system remains stable even when inputs fluctuate randomly.
-
-**Finite Difference Validation.** The finite difference pressure profile overlapped almost perfectly with the analytical solution. Because the underlying pressure-depth relationship is linear, this is expected, and it validates the numerical method's correctness.
-
-**Optimization.** Searching across candidate heights for the one that maximizes power while maintaining SF ≥ 1.5 suggested a theoretical optimal height of **~150 m**, yielding a maximum power of **~750.5 MW** — a striking illustration of the safety/power trade-off, though not a real-world engineering recommendation (a real dam wouldn't be designed to run at the edge of its safety margin).
-
-**Summary.** At the baseline operating condition, the system produces roughly 300 MW while maintaining a very high safety factor (SF ≈ 51), indicating a highly conservative, safe operating point. The agreement between the analytical and numerical methods throughout — trapezoidal integration matching the closed-form force solution, finite differences matching the analytical pressure profile, and the dimensionless π check landing on 0.5 — validates that the computational implementation is correct.
 
 ## Tech Stack
 
