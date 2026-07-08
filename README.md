@@ -14,7 +14,6 @@ Built as a final project for **ENGT 509 – Applied Computational Methods**.
 - [Mathematical Modeling](#mathematical-modeling)
 - [Computational Methods](#computational-methods)
 - [Implementation](#implementation)
-- [Results](#results)
 - [Tech Stack](#tech-stack)
 - [Running It](#running-it)
 - [Project Structure](#project-structure)
@@ -46,6 +45,7 @@ The app has sliders for every input and updates all outputs and plots in real ti
 - Dam type (Gravity, Arch, Buttress, Earth-fill)
 - Numerical resolution (number of integration points)
 - Monte Carlo sample size
+<img width="542" height="600" alt="image" src="https://github.com/user-attachments/assets/94e6fc0e-2289-451c-a7a8-62c3e58f28c3" />
 
 **Outputs shown:**
 - Bottom pressure, total force, power, safety factor, and unsafe risk %
@@ -55,6 +55,7 @@ The app has sliders for every input and updates all outputs and plots in real ti
 - Sensitivity (derivative) plot
 - Monte Carlo power distribution histogram
 - Finite difference vs. analytical pressure comparison
+<img width="997" height="719" alt="image" src="https://github.com/user-attachments/assets/2f5214fc-c124-4076-ac21-b54d1651076d" />
 
 ## Mathematical Modeling
 
